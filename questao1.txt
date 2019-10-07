@@ -1,0 +1,17 @@
+1 - Interfaces públicas são aquelas que são disponíveis para os objetos do programa, não apenas para objetos internos. Enquanto a interface publicada, apesar de não
+apresentar diferenças visíveis em questão de código, pode ser entendida como parte da arquitetura da aplicação, estando em um nível mais alto de abstração. Ela se
+relacionam da seguinte forma: Toda interface publicada é uma interface pública, mas nem toda interface pública é uma interface publicada.
+O problema em refatorar as interfaces é não é possivel identificar os elementos que fazem uso da mesma, outro problema é que, após uma publicação prematuar,
+os usuários podem ainda estar usando a interfaceantiga, o que causaria conflitos.
+
+2 - A diferença entre as duas é que na cirugia com rile uma mudança afeta várias classes, equanto nas mudanças divergentes,
+uma classe sofre várias mudanças. Na cirurgia com rifle os maus cheiros estão na dificuldade de encontrar lugares afetados por uma modificação, deste modo,
+realizar operações como de mover método e incorporar classe podem ajudar. Já no caso das mudanças divergentes, o mau cheiro está na dificuldade de organizar os
+diferentes tipos de mudança que podem estar presentes em uma classe, como por exemplo mudanças em regras de negócio e de persistência. Operações que separam os tipos
+de mudanças em lugares diferentes.
+
+3 - Falsa. Desempenho e Refatoração não são diretamente equivalentes. A refatoração melhora a estrutura do software e os torna mais facil de ser compreendido,
+não necessariamente mais otimizado.
+
+4 - A refatoração será um sucesso se for verificado o funcionamento (como verificando casos de teste) do código e que a refatoração não foi prejudicial para aplicação, 
+seja relacionado ao banco de dados ou a interfaces. Tambem quando for verificado que a o código está mais fácil de ser lido.
